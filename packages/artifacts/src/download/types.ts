@@ -5,7 +5,7 @@
  */
 export type SnarkArtifacts = Record<'wasm' | 'zkey', string>
 
-export type UltranHonkArtifacts = Record<'json', string>
+export type UltranHonkArtifacts = Record<'bytecode', string>
 
 type Digit = `${number}`
 type PreRelease = 'alpha' | 'beta'
