@@ -1,0 +1,18 @@
+{
+  "name": "@zk-kit/semaphore-artifacts",
+  "description": "zk-kit semaphore artifacts",
+  "circuit": "@semaphore-protocol/circuits",
+  "license": "MIT",
+  "version": "4.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/privacy-scaling-explorations/snark-artifacts.git"
+  },
+  "homepage": "https://github.com/privacy-scaling-explorations/snark-artifacts/tree/main/packages/semaphore",
+  "bugs": {
+    "url": "https://github.com/privacy-scaling-explorations/snark-artifacts/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

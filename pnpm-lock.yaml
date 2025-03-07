@@ -165,6 +165,8 @@ importers:
 
   packages/semaphore-identity: {}
 
+  packages/semaphore-noir: {}
+
 packages:
 
   '@adraffy/ens-normalize@1.10.1':

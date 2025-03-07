@@ -3,6 +3,7 @@ export enum Project {
   // RLN = 'rln',
   SEMAPHORE = 'semaphore',
   SEMAPHORE_IDENTITY = 'semaphore-identity',
+  SEMAPHORE_NOIR = 'semaphore-noir',
 }
 
 export const projects = Object.values(Project).sort()
