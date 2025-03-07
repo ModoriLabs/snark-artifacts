@@ -38,5 +38,6 @@ export async function maybeGetUltranHonkArtifacts(
 
   return {
     bytecode: `${baseUrl}${parameters}.bytecode`,
+    abi: `${baseUrl}${parameters}.abi`,
   }
 }
