@@ -41,10 +41,15 @@ export async function maybeGetUltranHonkArtifacts(
   const urls = await _maybeGetUltranHonkArtifacts(...pars)
 
   const outputPath = `${tmpdir()}/snark-artifacts/${urls.bytecode.split('semaphore-noir/')[1]}`
+  const abiOutPath = `${tmpdir()}/snark-artifacts/${urls.abi.split('semaphore-noir/')[1]}`
 
-  const bytecode = await maybeDownload(urls.bytecode, outputPath)
+  const [bytecode, abi] = await Promise.all([
+    maybeDownload(urls.bytecode, outputPath),
+    maybeDownload(urls.abi, abiOutPath),
+  ])
 
   return {
     bytecode,
+    abi,
   }
 }

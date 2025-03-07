@@ -1,0 +1,96 @@
+{
+  "parameters": [
+    {
+      "name": "secret",
+      "type": {
+        "kind": "field"
+      },
+      "visibility": "private"
+    },
+    {
+      "name": "indexes",
+      "type": {
+        "kind": "field"
+      },
+      "visibility": "private"
+    },
+    {
+      "name": "paths",
+      "type": {
+        "kind": "struct",
+        "path": "std::collections::bounded_vec::BoundedVec",
+        "fields": [
+          {
+            "name": "storage",
+            "type": {
+              "kind": "array",
+              "length": 26,
+              "type": {
+                "kind": "field"
+              }
+            }
+          },
+          {
+            "name": "len",
+            "type": {
+              "kind": "integer",
+              "sign": "unsigned",
+              "width": 32
+            }
+          }
+        ]
+      },
+      "visibility": "private"
+    },
+    {
+      "name": "scope",
+      "type": {
+        "kind": "field"
+      },
+      "visibility": "public"
+    },
+    {
+      "name": "message",
+      "type": {
+        "kind": "field"
+      },
+      "visibility": "public"
+    }
+  ],
+  "return_type": {
+    "abi_type": {
+      "kind": "tuple",
+      "fields": [
+        {
+          "kind": "field"
+        },
+        {
+          "kind": "field"
+        }
+      ]
+    },
+    "visibility": "public"
+  },
+  "error_types": {
+    "2920182694213909827": {
+      "error_kind": "string",
+      "string": "attempt to subtract with overflow"
+    },
+    "5019202896831570965": {
+      "error_kind": "string",
+      "string": "attempt to add with overflow"
+    },
+    "6485997221020871071": {
+      "error_kind": "string",
+      "string": "call to assert_max_bit_size"
+    },
+    "16761564377371454734": {
+      "error_kind": "string",
+      "string": "Array index out of bounds"
+    },
+    "17843811134343075018": {
+      "error_kind": "string",
+      "string": "Stack too deep"
+    }
+  }
+}
