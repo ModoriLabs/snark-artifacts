@@ -37,6 +37,6 @@ export async function maybeGetUltranHonkArtifacts(
     'https://raw.githubusercontent.com/ModoriLabs/snark-artifacts/refs/heads/main/packages/semaphore-noir/semaphore'
 
   return {
-    json: `${baseUrl}${parameters}.json`,
+    bytecode: `${baseUrl}${parameters}.bytecode`,
   }
 }
