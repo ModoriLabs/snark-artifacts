@@ -1,7 +1,7 @@
 import { tmpdir } from 'node:os'
 import { maybeDownload } from './download'
 import _maybeGetSnarkArtifacts from './index.browser'
-import { maybeGetUltranHonkArtifacts as _maybeGetUltranHonkArtifacts } from './index.browser'
+import { maybeGetUltraHonkArtifacts as _maybeGetUltraHonkArtifacts } from './index.browser'
 import type { SnarkArtifacts, UltranHonkArtifacts } from './types'
 
 const extractEndPath = (url: string) => url.split('pse.dev/')[1]
@@ -35,10 +35,10 @@ export default async function maybeGetSnarkArtifacts(
   }
 }
 
-export async function maybeGetUltranHonkArtifacts(
-  ...pars: Parameters<typeof _maybeGetUltranHonkArtifacts>
+export async function maybeGetUltraHonkArtifacts(
+  ...pars: Parameters<typeof _maybeGetUltraHonkArtifacts>
 ): Promise<UltranHonkArtifacts> {
-  const urls = await _maybeGetUltranHonkArtifacts(...pars)
+  const urls = await _maybeGetUltraHonkArtifacts(...pars)
 
   return {
     bytecode: urls.bytecode,

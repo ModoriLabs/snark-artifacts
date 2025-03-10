@@ -21,7 +21,7 @@ export default async function maybeGetSnarkArtifacts(
   }
 }
 
-export async function maybeGetUltranHonkArtifacts(
+export async function maybeGetUltraHonkArtifacts(
   project: Project,
   options: {
     parameters?: (bigint | number | string)[]

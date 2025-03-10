@@ -1,4 +1,4 @@
 export * from './index.shared'
-import maybeGetSnarkArtifacts, { maybeGetUltranHonkArtifacts } from './download/index.browser'
+import maybeGetSnarkArtifacts, { maybeGetUltraHonkArtifacts } from './download/index.browser'
 
-export { maybeGetSnarkArtifacts, maybeGetUltranHonkArtifacts }
+export { maybeGetSnarkArtifacts, maybeGetUltraHonkArtifacts }
