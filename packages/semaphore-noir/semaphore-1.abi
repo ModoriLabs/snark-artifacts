@@ -43,14 +43,14 @@
       "visibility": "private"
     },
     {
-      "name": "scope",
+      "name": "message",
       "type": {
         "kind": "field"
       },
       "visibility": "public"
     },
     {
-      "name": "message",
+      "name": "scope",
       "type": {
         "kind": "field"
       },
